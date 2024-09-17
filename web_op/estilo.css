@@ -1,7 +1,52 @@
+@font-face {
+  font-family: "Lexend";
+  src: url('fnt/Lexend-Medium.ttf');
+}
+
+html {
+  font-family: 'Lexend';
+  background-color: #e5e5f7;
+opacity: 1;
+background-image:  linear-gradient(#9fb4ff 1px, transparent 1px), linear-gradient(to right, #9fb4ff 1px, #e5e5f7 1px);
+background-size: 20px 20px;
+}
+
 h1 {
   color: blue;
 }
 
 .clase {
   color: red;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.peli {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
