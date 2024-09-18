@@ -12,21 +12,31 @@ background-size: 20px 20px;
 }
 
 h1 {
-  color: blue;
+  color: rgb(202, 79, 85);
 }
 
-.clase {
-  color: red;
+.h2 {
+  color: rgb(70, 101, 204);
+}
+
+.h3 {
+  color: rgb(154, 120, 218);
 }
 
 .center {
-  display: flex;
   align-items: center;
+  text-align: center;
+  align-content: center;
   justify-content: center;
+}
+
+.center2 {
+  margin-left: 26.5%;
 }
 
 .peli {
   height: 600px;
+  width: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
