@@ -26,3 +26,31 @@ function desaparece(nombre) {
 	var button = document.getElementById(nombre);
   button.style.visibility='hidden';
 }
+
+function marcar() {
+
+  document.getElementById("favoritas").style.color = "magenta";
+
+  /*
+  var favoritas = document.getElementsByClassName(nombre);
+  for (var i = 0; i < elementos.length; i++) 
+  {
+    favoritas.item(i).style.color = "magenta";
+  }
+    */
+}
+
+function esconder(nombre) {
+  var button = document.getElementsByClassName(nombre); // guardas en button 
+  for (var i = 0; i < button.length; i++) 
+  {
+    if (button.item(i).style.visibility == 'hidden') 
+    {
+      button.item(i).style.visibility = 'visible';
+    }
+    else 
+    {
+      button.item(i).style.visibility = 'hidden';
+    }
+  }
+}

@@ -15,7 +15,7 @@
 
   <!-- h1, h2, etc son headers -->
   <div class="center">
-    <h1>Películas que han moldeado mi personalidad</h1>
+    <h1 class="h1">Películas que han moldeado mi personalidad</h1>
   </div>
 
   <div>
@@ -23,45 +23,46 @@
           <h2 class=h2> Grandes películas que hacen a Nieves más Nieves (Nieves siendo yo)</h2>
           <br>
           <h3 class="h3">---------------------</h3>
-          <button onclick="alert(quadrAlerta())">Ocultar pelis</button>
-          <button onclick="alert(quadrAlerta())">Mostrar todas</button> 
+          <button class="button1" onclick="alert(quadrAlerta())">Ocultar pelis</button>
+          <button class="button1" onclick="alert(quadrAlerta())">Mostrar todas</button>
+          <button class="button1" onclick="marcar()">Marcar las 3 favoritas</button>
       </div>
 
     <table class="center2">
         <tr>
           <th class="center">
-              <h3 class="h3">Quadrophenia (1979)</h3>
+              <li class="h3">Quadrophenia (1979)</li>
               <p>Hola esto es una peli</p>
               <img class="peli" src="./img/quadrophenia.jpg" alt="Quadrophenia">
               <br>
-              <button onclick="alert(quadrAlerta())">Frase de la peli</button>
+              <button class="button2" onclick="alert(quadrAlerta())">Frase de la peli</button>
               <h3 class="h3">---------------------</h3>
           </th>
           <th class="center">
-              <h3 class="h3">El milagro de P. Tinto (1998)</h3>
+              <li class="h3">El milagro de P. Tinto (1998)</li>
               <p>Hola esto es una peli</p>
               <img class="peli" src="./img/elmilagro.jpg" alt="P. Tinto">
               <br>
-              <button onclick="alert(milagroAlerta())">Frase de la peli</button>
+              <button  class="button2" onclick="alert(milagroAlerta())">Frase de la peli</button>
               <h3 class="h3">---------------------</h3>
           </th>
         </tr>
 
         <tr>
           <th class="center">
-              <h3 class="h3">El faro (2019)</h3>
+              <li class="h3" class="favoritas">El faro (2019)</li>
               <p>Hola esto es una peli</p>
               <img class="peli" src="./img/faro.jpg" alt="El faro">
               <br>
-              <button onclick="alert(faroAlerta())">Frase de la peli</button>
+              <button class="button2" onclick="alert(faroAlerta())">Frase de la peli</button>
               <h3 class="h3">---------------------</h3>
           </th>
           <th class="center">
-              <h3 class="h3">Brokeback Mountain (2005)</h3>
+              <li class="h3" class="favoritas">Brokeback Mountain (2005)</li>
               <p>Hola esto es una peli</p>
               <img class="peli" src="./img/brokebackmountain.jpg" alt="Brokeback Mountain">
               <br>
-              <button onclick="alert(brokeAlerta())">Frase de la peli</button>
+              <button class="button2" onclick="alert(brokeAlerta())">Frase de la peli</button>
               <h3 class="h3">---------------------</h3>
           </th>
         </tr>
@@ -70,18 +71,18 @@
 
         <tr>
             <th class="center">
-              <h3 class="h3">EL club de la lucha (1999)</h3>
+              <li class="h3">EL club de la lucha (1999)</li>
               <p>Hola esto es una peli</p>
               <img class="peli" src="./img/lucha.jpg" alt="El club de la lucha">
               <br>
-              <button onclick="alert(luchaAlerta())">Frase de la peli</button>
+              <button class="button2" onclick="alert(luchaAlerta())">Frase de la peli</button>
             </th>
             <th class="center">
-              <h3 class="h3">Clerks (1994)</h3>
+              <li class="h3" id="favoritas">Clerks (1994)</li>
               <p>Hola esto es una peli</p>
               <img class="peli" src="./img/clerks.jpg" alt="Clerks">
               <br>
-              <button onclick="alert(clerksAlerta())">Frase de la peli</button>
+              <button class="button2" onclick="alert(clerksAlerta())">Frase de la peli</button>
             </th>
         </tr>
     </table>
@@ -95,7 +96,6 @@
 
 
   <div>
-    <button onclick="document.getElementById('magico').style.visibility='hidden'"> Desaparece!!! </button>
     <button onclick="desaparece('magico')"> Desaparece!!! (pero usando una función) </button>
   </div>
 </body>

@@ -6,17 +6,17 @@
 html {
   font-family: 'Lexend';
   background-color: #e5e5f7;
-opacity: 1;
-background-image:  linear-gradient(#9fb4ff 1px, transparent 1px), linear-gradient(to right, #9fb4ff 1px, #e5e5f7 1px);
-background-size: 20px 20px;
+  opacity: 1;
+  background-image:  linear-gradient(#9fb4ff 1px, transparent 1px), linear-gradient(to right, #9fb4ff 1px, #e5e5f7 1px);
+  background-size: 20px 20px;
 }
 
-h1 {
+.h1 {
   color: rgb(202, 79, 85);
 }
 
 .h2 {
-  color: rgb(70, 101, 204);
+  color: hsl(226, 57%, 54%);
 }
 
 .h3 {
@@ -31,7 +31,14 @@ h1 {
 }
 
 .center2 {
-  margin-left: 26.5%;
+  margin-left: 24.5%;
+  margin-top: 20px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  background-color: #7f7de446;
+  width: 50%;
 }
 
 .peli {
@@ -59,4 +66,18 @@ h1 {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.button1 {
+  margin: 15px;
+  background-color: hsl(226, 57%, 54%);
+  color: hsl(225, 44%, 82%);
+  border-radius: 3px;
+}
+
+.button2 {
+  margin: 15px;
+  background-color: rgb(154, 120, 218);
+  color: rgb(213, 201, 236);
+  border-radius: 3px;
 }
