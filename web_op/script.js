@@ -22,43 +22,47 @@ function clerksAlerta() {
   return "Caged Animal Masturbator: It's important to have a job that makes a difference, boys. That's why I manually masturbate caged animals for artificial insemination.";
 }
 
-function desaparece(nombre) {
-	var button = document.getElementById(nombre);
-  button.style.visibility='hidden';
-}
-
-// este metodo no va y no se por que :(
-function marcar(nombre) {
-  var favoritas = document.getElementsByClassName(nombre);
-  for (var i = 0; i < elementos.length; i++) 
-  {
-    favoritas.item(i).style.color = "magenta";
-  }
-}
-
 function marcar() {
-  document.getElementById("fav1").style.color = "magenta";
-  document.getElementById("fav2").style.color = "magenta";
-  document.getElementById("fav3").style.color = "magenta";
+  var favoritas = document.getElementsByClassName("favoritas");
+
+  for (var i = 0; i < favoritas.length; i++) 
+  {
+    favoritas.item(i).style.color = "#e0537e";
+  }
+  console.log(favoritas);
 }
 
 function desmarcar() {
-  document.getElementById("fav1").style.color = "#9a78da";
-  document.getElementById("fav2").style.color = "#9a78da";
-  document.getElementById("fav3").style.color = "#9a78da";
+  var favoritas = document.getElementsByClassName("favoritas");
+
+  for (var i = 0; i < favoritas.length; i++) 
+  {
+    favoritas.item(i).style.color = "#9a78da";
+  }
+  console.log(favoritas);
 }
 
-function esconder(nombre) {
-  var button = document.getElementsByClassName(nombre); // guardas en button 
+function mostrar() {
+  var ocultas = document.getElementsByClassName("duo");
+
+  for (var i = 0; i < ocultas.length; i++) 
+  {
+    if (ocultas.item(i).style.visibility == 'hidden') 
+    {
+      ocultas.item(i).style.visibility = 'visible';
+    }
+  }
+}
+
+function ocultar() {
+  var button = document.getElementsByClassName("duo");
   for (var i = 0; i < button.length; i++) 
   {
-    if (button.item(i).style.visibility == 'hidden') 
-    {
-      button.item(i).style.visibility = 'visible';
-    }
-    else 
+    if (button.item(i).style.visibility == 'visible') 
     {
       button.item(i).style.visibility = 'hidden';
     }
   }
+
+  desmarcar();
 }
