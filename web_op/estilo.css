@@ -49,25 +49,6 @@ html {
   justify-content: center;
 }
 
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  align-items: center;
-  justify-content: center;
-}
-
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .button1 {
   margin: 15px;
   background-color: hsl(226, 57%, 54%);

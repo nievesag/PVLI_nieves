@@ -27,17 +27,25 @@ function desaparece(nombre) {
   button.style.visibility='hidden';
 }
 
-function marcar() {
-
-  document.getElementById("favoritas").style.color = "magenta";
-
-  /*
+// este metodo no va y no se por que :(
+function marcar(nombre) {
   var favoritas = document.getElementsByClassName(nombre);
   for (var i = 0; i < elementos.length; i++) 
   {
     favoritas.item(i).style.color = "magenta";
   }
-    */
+}
+
+function marcar() {
+  document.getElementById("fav1").style.color = "magenta";
+  document.getElementById("fav2").style.color = "magenta";
+  document.getElementById("fav3").style.color = "magenta";
+}
+
+function desmarcar() {
+  document.getElementById("fav1").style.color = "#9a78da";
+  document.getElementById("fav2").style.color = "#9a78da";
+  document.getElementById("fav3").style.color = "#9a78da";
 }
 
 function esconder(nombre) {

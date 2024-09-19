@@ -25,7 +25,8 @@
           <h3 class="h3">---------------------</h3>
           <button class="button1" onclick="alert(quadrAlerta())">Ocultar pelis</button>
           <button class="button1" onclick="alert(quadrAlerta())">Mostrar todas</button>
-          <button class="button1" onclick="marcar()">Marcar las 3 favoritas</button>
+          <button type="button" class="button1" onclick="marcar()">Marcar las 3 favoritas</button>
+          <button type="button" class="button1" onclick="desmarcar()">Desmarcar las 3 favoritas</button>
       </div>
 
     <table class="center2">
@@ -50,7 +51,7 @@
 
         <tr>
           <th class="center">
-              <li class="h3" class="favoritas">El faro (2019)</li>
+              <li class="h3" id="fav1">El faro (2019)</li>
               <p>Hola esto es una peli</p>
               <img class="peli" src="./img/faro.jpg" alt="El faro">
               <br>
@@ -58,7 +59,7 @@
               <h3 class="h3">---------------------</h3>
           </th>
           <th class="center">
-              <li class="h3" class="favoritas">Brokeback Mountain (2005)</li>
+              <li class="h3" id="fav2">Brokeback Mountain (2005)</li>
               <p>Hola esto es una peli</p>
               <img class="peli" src="./img/brokebackmountain.jpg" alt="Brokeback Mountain">
               <br>
@@ -78,7 +79,7 @@
               <button class="button2" onclick="alert(luchaAlerta())">Frase de la peli</button>
             </th>
             <th class="center">
-              <li class="h3" id="favoritas">Clerks (1994)</li>
+              <li class="h3" id="fav3">Clerks (1994)</li>
               <p>Hola esto es una peli</p>
               <img class="peli" src="./img/clerks.jpg" alt="Clerks">
               <br>
