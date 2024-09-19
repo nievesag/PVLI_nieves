@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Lexend";
+  src: url('fnt/Lexend-Medium.ttf');
+}
+
+html {
+  font-family: 'Lexend';
+  background-color: #e5e5f7;
+  opacity: 1;
+  background-image:  linear-gradient(#9fb4ff 1px, transparent 1px), linear-gradient(to right, #9fb4ff 1px, #e5e5f7 1px);
+  background-size: 20px 20px;
+}
+
+.h1 {
+  color: rgb(202, 79, 85);
+}
+
+.h2 {
+  color: hsl(226, 57%, 54%);
+}
+
+.h3 {
+  color: #9a78da;
+}
+
+.center {
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.center2 {
+  margin-left: 24.5%;
+  margin-top: 20px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  background-color: #7f7de446;
+  width: 50%;
+}
+
+.peli {
+  height: 600px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button1 {
+  margin: 15px;
+  background-color: hsl(226, 57%, 54%);
+  color: hsl(225, 44%, 82%);
+  border-radius: 3px;
+}
+
+.button2 {
+  margin: 15px;
+  background-color: rgb(154, 120, 218);
+  color: rgb(213, 201, 236);
+  border-radius: 3px;
+}
