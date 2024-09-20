@@ -66,3 +66,8 @@ function ocultar() {
 
   desmarcar();
 }
+
+function sonar() {
+  var pipe = new Audio('snd/pipe.mp3');
+  pipe.play();
+}
