@@ -117,6 +117,7 @@ window.onload = function () {
       var option = document.createElement('option');
       option.innerHTML = character.name; // nombre -> texto que se muestra
       option.value = character.id;       // id -> valor a devolver por selección
+      character.hp = character.maxHp;    // max hp -> barra al max
       select.appendChild(option);
   });
   
@@ -130,12 +131,27 @@ window.onload = function () {
       event.preventDefault();
       var charaID = form.querySelector('[name=chara]').value; // ahora accede al id el pj
       var character = findCharById(charID);
-      character.hp -= 5;
-      if(character.hp <= 0) {
-        character.hp = 0; // corrige el valor en caso de que sea negativo.
-        var li = list.querySelector('[data-charaid=' + charaID + ']');
-        li.classList.add('dead');
-        buttonChange.disabled = true; // desactiva el button
+
+      let damage = 5;
+      let i = 0;
+
+      if (character.hp > 0) { // si aun hay vida
+        function animar() {   // bucle para animar la barra bajando
+          character.hp--; // en vez de bajar directamente la vida va poco a poco 
+          i++; // aumenta el indice
+  
+          if (character.hp <= 0) { // lo que se comprobaba antes fuera
+            character.hp = 0; // corrige el valor en caso de que sea negativo.
+            var li = list.querySelector('[data-charaid=' + charaID + ']');
+            li.classList.add('dead');
+            buttonChange.disabled = true; // desactiva el button
+          }
+  
+          if (i < damage) { // mientras haya que animar
+            window.requestAnimationFrame(animar);
+          }
+        }
+        window.requestAnimationFrame(animar);
       }
   });
 // ----
