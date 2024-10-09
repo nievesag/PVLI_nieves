@@ -22,6 +22,17 @@ window.onload = function () {
 
   // genera un select para los pjs de la party
   var select = document.querySelector('select[name=chara]');
+  let buttonChange = document.getElementById('boton');
+
+  // para cambiar el button
+  select.addEventListener('change', function (event) {
+      event.preventDefault();
+      var charaID = form.querySelector('[name=chara]').value;
+      var li = list.querySelector('[data-charaid=' + charaID + ']');
+      if (li.classList.contains('dead')) buttonChange.disabled = true; // si el <li> del personaje correspondiente tiene la clase dead -> desactiva
+      else buttonChange.disabled = false; // -> mantiene activo
+  });
+
   party.forEach(function (character) {
       var option = document.createElement('option');
       option.innerHTML = character.name; // nombre -> texto que se muestra
@@ -36,6 +47,7 @@ window.onload = function () {
       var charaID = form.querySelector('[name=chara]').value; // ahora accede al id el pj
       var li = list.querySelector('[data-charaid=' + charaID + ']');
       li.classList.add('dead');
+      buttonChange.disabled = true; // desactiva el button
   });
 // ----
 };

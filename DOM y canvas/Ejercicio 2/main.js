@@ -22,6 +22,6 @@ window.onload = function ()
                           function () 
                           {
                             var el = document.getElementById('kittens');
-                            el.innerHTML="<img src=\"https://placekitten.com/g/200/200/\">";
+                            el.innerHTML += "<img src=\"https://placekitten.com/g/200/200/\">";
                           });
 };
